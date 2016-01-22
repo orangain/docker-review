@@ -2,7 +2,7 @@ FROM debian:jessie
 MAINTAINER orangain
 
 ENV LANG en_US.UTF-8
-ENV REVIEW_VERSION 1.6.0
+ENV REVIEW_VERSION 1.7.2
 
 # Setup and Install
 #   * texlive-*: for LaTeX
