@@ -1,0 +1,12 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker info
+    - docker build -t whywaita/docker-latex-jlisting .
+
+test:
+  override:
+    - docker run -i -t whywaita/docker-latex-jlisting /tmp/spec.sh

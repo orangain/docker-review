@@ -1,0 +1,14 @@
+sudo: required
+
+language: ruby
+
+services:
+  - docker
+
+before_install:
+  - docker info
+  - docker build -t whywaita/docker-latex-jlisting .
+  - docker ps -a
+
+script:
+  - docker run -i -t whywaita/docker-latex-jlisting /tmp/spec.sh
