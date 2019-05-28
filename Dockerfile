@@ -1,4 +1,4 @@
-FROM vvakame/review:2.5
+FROM vvakame/review:3.1
 
 # Setup and Install
 #   * bzip2: for installing jlisting.sty
